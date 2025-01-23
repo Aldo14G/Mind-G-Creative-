@@ -4,62 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo de Bases de Datos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #F2EFE7;
-            color: #2973B2;
-        }
-        header {
-            background: #48A6A7;
-            color: #F2EFE7;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1, header h2 {
-            margin: 5px 0;
-        }
-        nav {
-            margin: 20px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #e5f3f4;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1rem;
-        }
-        nav a:hover {
-            color: #2973B2;
-        }
-        .container {
-            width: 80%;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #FFF;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .section {
-            margin-top: 50px;
-            padding: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #2973B2;
-            color: #F2EFE7;
-            margin-top: 20px;
-        }
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -67,7 +12,6 @@
         <h2>Gestión de la Información y Recursos Digitales</h2>
         <h2>Desarrollo de Bases de Datos</h2>
         <nav>
-            <!-- Enlaces del menú -->
             <a href="#inicio">Inicio</a>
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#bases-de-datos">Bases de Datos</a>
@@ -75,19 +19,17 @@
         </nav>
     </header>
 
-    <!-- Sección Inicio -->
     <div id="inicio" class="container section">
         <h2>Inicio</h2>
         <p>Bienvenido a mi portafolio. Aquí encontrarás información sobre bases de datos, gestión de información y otros temas relevantes para tu aprendizaje.</p>
     </div>
 
-    <!-- Sección Sobre mí -->
     <div id="sobre-mi" class="container section">
         <h2>Sobre mí</h2>
-        <p>Mi nombre es Aldo Giovanni Martínez Pineda, estudiante de Gestión de la Información y Recursos Digitales. Me especializo en la organización y análisis de datos, así como en el diseño de soluciones digitales eficientes.</p>
+        <p>Mi nombre es Aldo Giovanni Martínez Pineda, estudiante de Gestión de la Información y Recursos Digitales con la matrícula 2022483.
+            Me especializo en la organización y análisis de datos, así como en el diseño de soluciones digitales.</p>
     </div>
 
-    <!-- Sección Bases de Datos -->
     <div id="bases-de-datos" class="container section">
         <h2>Información sobre Bases de Datos</h2>
         <p>
@@ -98,52 +40,8 @@
             Cuando hablamos de bases de datos, estas se dividen principalmente en dos categorías: relacionales y no relacionales. 
             Comprender las diferencias entre estos tipos de bases de datos es crucial para utilizar el tipo correcto en cada aplicación.
         </p>
-        <h3>¿Qué son las bases de datos?</h3>
-        <p>
-            Las bases de datos son sistemas esenciales en la gestión de información que nos permiten almacenar, consultar, modificar y eliminar datos con eficiencia. 
-            Su relevancia en el análisis de información es tal que podríamos compararlas con un archivo de Excel, donde las filas representan registros y las columnas atributos. 
-            Sin embargo, cuando hablamos de bases de datos, estas se dividen principalmente en dos categorías: relacionales y no relacionales. 
-            Comprender las diferencias entre estos tipos de bases de datos es crucial para utilizar el tipo correcto en cada aplicación.
-        </p>
-        <h3>¿Cuáles son las diferencias entre bases de datos relacionales y no relacionales?</h3>
-        <p>
-            Las bases de datos relacionales, conocidas como RDBMS (Relational Database Management Systems), están estructuradas principalmente en tablas que contienen filas y columnas. 
-            Las columnas representan atributos como nombre, edad o dirección, mientras que las filas contienen los registros. Este tipo de bases de datos sigue un esquema rígido, 
-            lo que significa que la estructura debe estar definida y acorde a la información que se desea almacenar. Esto también implica que no se pueden agregar atributos nuevos 
-            sin modificar el esquema existente. Las bases de datos relacionales también se destacan por el manejo de relaciones entre tablas, utilizando claves primarias y foráneas 
-            para garantizar la integridad y consistencia de los datos.
-        </p>
-        <p>
-            Por otro lado, las bases de datos no relacionales, también conocidas como NoSQL, presentan una estructura mucho más flexible. 
-            En estas bases, la información se puede almacenar en diversos formatos, como grafos, archivos JSON, o sistemas de clave-valor, 
-            y se pueden agregar atributos nuevos sin modificar su estructura subyacente. Además, las relaciones no son explícitas como en las relacionales, 
-            lo que conlleva a una gestión diferente del manejo de conexiones y reglas a nivel de aplicación.
-        </p>
-        <h3>¿Cómo manejan la escalabilidad y la integridad los dos tipos?</h3>
-        <p>
-            En términos de escalabilidad, las bases de datos relacionales escalan principalmente de manera vertical, es decir, mejorando el hardware del servidor. 
-            Esto puede incluir actualizaciones de memoria, procesamiento o almacenamiento. No obstante, las bases de datos no relacionales son óptimas para la escalabilidad horizontal, 
-            agregando nodos o servidores adicionales.
-        </p>
-        <p>
-            La integridad es otro aspecto clave. Las bases de datos relacionales garantizan la consistencia de la información mediante restricciones estrictas como claves únicas, 
-            reglas de negocio, y relaciones entre tablas. En las no relacionales, por su flexibilidad y capacidad para manejar datos no estructurados o semi-estructurados, 
-            se prioriza la habilidad de manejar grandes volúmenes de información sin las mismas restricciones.
-        </p>
-        <h3>¿Cuáles son los casos de uso para cada tipo de base de datos?</h3>
-        <p>
-            Las bases de datos relacionales son ideales para aplicaciones que requieren un manejo estructurado y consistente de datos, 
-            como los sistemas ERP, la gestión de inventarios, y la gestión de información financiera. Ejemplos de motores de bases de datos relacionales son MySQL, PostgreSQL, 
-            Oracle, Microsoft SQL Server y SQLite.
-        </p>
-        <p>
-            En contraste, las bases de datos no relacionales son adecuadas para el almacenamiento de datos no estructurados o semi-estructurados, 
-            como los que generan las aplicaciones web, redes sociales y algunos proyectos de Big Data. Estas bases sobresalen en el manejo de datos vectoriales y otros formatos que requieren flexibilidad. 
-            Algunos motores de bases de datos no relacionales populares son MongoDB, Cassandra, Redis y DynamoDB.
-        </p>
     </div>
-    
-    <!-- Sección Mi contacto -->
+
     <div id="mi-contacto" class="container section">
         <h2>Contacto</h2>
         <p>Si tienes preguntas o deseas contactarme, puedes escribirme al correo electrónico: <strong>aldogiomtz14@gmail.com</strong>.</p>
